@@ -3,7 +3,7 @@
 import Giscus from '@giscus/react'
 
 interface CommentsProps {
-  repo: string
+  repo: `${string}/${string}`
   repoId: string
   category: string
   categoryId: string

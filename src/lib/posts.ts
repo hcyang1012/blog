@@ -7,7 +7,7 @@ import { Post, PostMetadata } from '@/types/post';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-export function getSortedPostsData(): PostMetadata[] {
+export function getSortedPostsData(): (PostMetadata & { slug: string })[] {
   if (!fs.existsSync(postsDirectory)) {
     return [];
   }

@@ -66,7 +66,7 @@ export default async function PostPage({ params }: PostPageProps) {
             {/* Comments Section - Configure these values when you set up Giscus */}
             {process.env.NEXT_PUBLIC_GISCUS_REPO && (
               <Comments
-                repo={process.env.NEXT_PUBLIC_GISCUS_REPO}
+                repo={process.env.NEXT_PUBLIC_GISCUS_REPO as `${string}/${string}`}
                 repoId={process.env.NEXT_PUBLIC_GISCUS_REPO_ID || ''}
                 category={process.env.NEXT_PUBLIC_GISCUS_CATEGORY || 'General'}
                 categoryId={process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID || ''}
@@ -76,7 +76,7 @@ export default async function PostPage({ params }: PostPageProps) {
         </div>
       </div>
     );
-  } catch (error) {
+  } catch {
     notFound();
   }
 }

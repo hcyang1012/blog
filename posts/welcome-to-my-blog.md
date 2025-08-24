@@ -1,6 +1,6 @@
 ---
 title: "Welcome to My Blog"
-date: "2024-08-24"
+date: "2025-08-24"
 excerpt: "This is my first blog post. Welcome to my new blog where I'll be sharing thoughts, ideas, and experiences."
 tags: ["welcome", "introduction", "blog"]
 author: "Heecheol Yang"
@@ -48,4 +48,4 @@ Thanks for visiting, and I hope you enjoy the content!
 
 ---
 
-*This post was created on August 24, 2024*
+*This post was created on August 24, 2025*
